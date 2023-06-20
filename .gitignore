@@ -1,5 +1,7 @@
-/.bundle/
-/.env
-/deployment/config.yml
-/deployment/deployment.yml
-state.json
+build
+CrawfishOS-*BASE
+CrawfishOS-*img*
+PrawnOS-initramfs.cpio.gz
+PrawnOS-Shiba-*
+.*.swp
+tmp.*
