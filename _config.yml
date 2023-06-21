@@ -1,0 +1,69 @@
+title: Homebrew Formulae
+description: Homebrew's package index
+
+remote_theme: Homebrew/brew.sh
+
+exclude:
+  - bin
+  - script
+  - CNAME
+  - LICENSE.txt
+  - Rakefile
+  - README.md
+  - Gemfile*
+  - vendor
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: :title
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://brew.sh/assets/img/homebrew-256x256.png
+      search_name: Homebrew Formulae
+      search_site: formulae
+
+taps:
+  core:
+    repo: core
+    name: Homebrew/core
+    fullname: Homebrew/homebrew-core
+    remote: https://github.com/Homebrew/homebrew-core
+  cask:
+    repo: cask
+    name: Homebrew/cask
+    fullname: Homebrew/homebrew-cask
+    remote: https://github.com/Homebrew/homebrew-cask
+
+analytics:
+  intervals:
+    - name: 30 days
+      path: 30d
+    - name: 90 days
+      path: 90d
+    - name: 365 days
+      path: 365d
+  categories:
+    formulae:
+      - name: Installs
+        path: install
+      - name: Installs on Request
+        path: install-on-request
+      - name: Build Errors
+        path: build-error
+
+logo: https://brew.sh/assets/img/homebrew-256x256.png
+
+forkme_nwo: Homebrew/formulae.brew.sh
+
+twitter:
+  username: MacHomebrew
+
+facebook:
+  publisher: https://www.facebook.com/machomebrew/

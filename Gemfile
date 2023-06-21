@@ -2,14 +2,10 @@
 
 source "https://rubygems.org"
 
-gem "faraday-retry" # for octokit
-gem "jwt"
-gem "octokit"
-gem "orka_api_client", git: "https://github.com/Homebrew/orka_api_client"
-gem "puma"
-gem "sinatra"
-
-group :development, optional: true do
-  gem "rubocop"
-  gem "rubocop-performance"
-end
+gem "faraday-retry"
+gem "jekyll"
+gem "jekyll-redirect-from"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "rake"
