@@ -1,17 +1,13 @@
+# toplevel
+/.bundle/
+/.idea/
+/bin/
+/vendor/
+/venv/
+
+# anywhere in the tree
+*~
+*.iml
 .DS_Store
-.bundle/
-_site/
-bin/
-vendor/
-.jekyll-metadata
-.homebrew_analytics.json
-.sass-cache/
-Gemfile.lock
-_data/
-api/cask/
-api/cask-source/
-api/formula/
-api/analytics/
-_includes/api-samples/
-cask/
-formula/
+.ruby-version
+coverage
