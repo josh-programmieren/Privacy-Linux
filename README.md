@@ -1,29 +1,31 @@
-# homebrew-cask-drivers
-Casks of drivers
+# Homebrew Core
+Core formulae for the Homebrew package manager.
 
-# Usage
-
-After you install Homebrew, run the following command:
-
-```sh
-brew tap homebrew/cask-drivers
+## Update Bug
+If Homebrew was updated on Aug 10-11th 2016 and `brew update` always says `Already up-to-date.` you need to run:
+```bash
+cd "$(brew --repo)" && git fetch && git reset --hard origin/master && brew update
 ```
 
-You can now install the casks in this repo.
+## How do I install these formulae?
+Just `brew install <formula>`. This is the default tap for Homebrew and is installed by default.
 
-```sh
-brew install xbox360-controller-driver-unofficial
-```
+## Troubleshooting
+First, please run `brew update` (twice) and `brew doctor`.
 
-## Submitting a Cask to this repository
+Second, read the [Troubleshooting Checklist](http://docs.brew.sh/Troubleshooting.html).
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+**If you don’t read these it will take us far longer to help you with your problem.**
 
-## On macOS version compatibility
+## Contributing
+Read [CONTRIBUTING.md](/CONTRIBUTING.md).
 
-Drivers have strict requirements regarding which versions of an operating system they can run on. If you wish to expand the OS support for a driver cask, *you need to provide a link to the upstream page that verifies said support*. This is to say that “I’ve tried it on my machine and it worked” is not sufficient reasoning. For all we know, the software may break on the next point release, or it may just be your specific configuration that allows it to run even though your OS version is not officially supported.
+Creating new formulae, updating existing ones, and fixing build issues is easier than you think!
 
-If you believe the upstream requirements are incorrect, please contact *them* and get them to correct the information on their page, at which point the cask requirements can also be updated.
+Try `brew edit $FORMULA` and see how you fare.
+
+## Documentation
+`brew help`, `man brew`, [Homebrew/brew's README](https://github.com/Homebrew/brew#homebrew) or check [Homebrew's documentation](https://github.com/Homebrew/brew/tree/master/docs#readme).
 
 ## License
-[The Unlicense](https://unlicense.org/)
+Code is under the [BSD 2-clause "Simplified" License](https://github.com/Homebrew/homebrew-core/blob/master/LICENSE.txt).
